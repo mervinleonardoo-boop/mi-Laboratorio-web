@@ -88,7 +88,28 @@
             transition: background 0.3s ease;
         }
         .btn:hover {
-            background-color: #7dd3fc;
+            background-color: #7dd3fc;/* --- DISEÑO RESPONSIVE Y TARJETAS DE SERVICIOS --- */
+
+.services-grid {
+  display: grid;
+  /* Esta línea hace que las tarjetas se acomoden solas en PC y en celular */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px); /* Efecto al pasar el cursor */
+}
         }
     </style>
 </head>
