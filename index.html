@@ -3,86 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mervin Orozco | Servicios de Infraestructura Web & Soporte WordPress</title>
+    <title>Mervin Orozco | Servicios de Soporte Web</title>
     <style>
-        * {
-            box-sizing: border-box;
+        /* Estilos Generales y Fondo Oscuro */
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 40px 20px;
         }
-       /* --- CONFIGURACIÓN GENERAL Y TIPOGRAFÍA --- */
-body {
-    background-color: #0d1117;
-    color: #c9d1d9;
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased; /* Suavizado de fuentes para mayor nitidez */
-    -moz-osx-font-smoothing: grayscale;
-}
 
-/* --- DISEÑO RESPONSIVO Y TARJETAS DE SERVICIOS --- */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px 0;
-}
+        h1, h2, h3 {
+            color: #ffffff;
+        }
 
-.service-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    border: 1px solid #30363d;
-    background-color: #161b22;
-    border-radius: 12px;
-    padding: 25px;
-    position: relative;
-}
+        /* Contenedor y Cuadrícula de Servicios */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
 
-.service-card h3 {
-    color: #38bdf8;
-}
+        /* Tarjeta de Servicio */
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            border: 1px solid #30363d;
+            background-color: #161b22;
+            border-radius: 12px;
+            padding: 25px;
+            position: relative;
+        }
 
-.service-card:hover {
-    transform: translateY(-6px);
-    border-color: #38bdf8;
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.25), 0 12px 30px rgba(0, 0, 0, 0.4);
-}
+        .service-card h3 {
+            color: #38bdf8;
+            margin-top: 0;
+        }
 
-/* --- BOTONES Y LLAMADOS A LA ACCIÓN --- */
-.cta-button {
-    display: inline-block;
-    background-color: #38bdf8;
-    color: #0d1117;
-    padding: 12px 25px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
+        .service-card ul {
+            padding-left: 20px;
+        }
 
-.cta-button:hover {
-    background-color: #7dd3fc;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
-}
-  border: 1px solid #334155;
-}
+        .service-card li {
+            margin-bottom: 8px;
+            color: #8b949e;
+        }
 
-.service-card:hover {
-  transform: translateY(-8px);
-  border-color: #38bdf8;
-  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.2);
-}
+        /* Efecto Hover (Neón / Glow) */
+        .service-card:hover {
+            transform: translateY(-6px);
+            border-color: #38bdf8;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.25), 0 12px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Botón de Llamado a la Acción */
+        .cta-button {
+            display: inline-block;
+            background-color: #38bdf8;
+            color: #0d1117;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.2s;
+        }
+
+        .cta-button:hover {
+            background-color: #7dd3fc;
+        }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>Mervin Orozco</h1>
-            <p class="subtitle">Especialista en Soporte Web, Infraestructura cPanel y WordPress</p>
-        </header>
+    <!-- Encabezado Principal -->
+    <header>
+        <h1>Mervin Orozco</h1>
+        <p>Especialista en Soporte Web, Infraestructura cPanel y WordPress</p>
+    </header>
 
+    <!-- Sección de Tarjetas de Servicios -->
+    <main>
         <section class="services-grid">
-            <div class="card">
+            
+            <!-- Tarjeta 1 -->
+            <div class="service-card">
                 <h3>Soporte WordPress</h3>
                 <ul>
                     <li>Solución de errores críticos</li>
@@ -92,7 +98,8 @@ body {
                 </ul>
             </div>
 
-            <div class="card">
+            <!-- Tarjeta 2 -->
+            <div class="service-card">
                 <h3>cPanel & Infraestructura</h3>
                 <ul>
                     <li>Configuración de correos corporativos</li>
@@ -102,7 +109,8 @@ body {
                 </ul>
             </div>
 
-            <div class="card">
+            <!-- Tarjeta 3 -->
+            <div class="service-card">
                 <h3>Mantenimiento Técnico</h3>
                 <ul>
                     <li>Respaldos automatizados</li>
@@ -111,14 +119,16 @@ body {
                     <li>Soporte operativo continuo</li>
                 </ul>
             </div>
+
         </section>
 
-        <div class="cta-section">
+        <!-- Sección de Llamado a la Acción -->
+        <section style="margin-top: 40px;">
             <h2>¿Tienes un problema técnico en tu sitio web?</h2>
             <p>Te ayudo a resolver fallos de servidor, correo o WordPress de manera rápida y eficiente.</p>
-            <a href="mailto:tu-correo@email.com" class="btn">Solicitar Diagnóstico</a>
-        </div>
-    </div>
+            <a href="mailto:contacto@tudominio.com" class="cta-button">Solicitar Diagnóstico</a>
+        </section>
+    </main>
 
 </body>
 </html>
