@@ -70,9 +70,28 @@
             transition: background-color 0.2s;
         }
 
-        .cta-button:hover {
-            background-color: #7dd3fc;
-        }
+       /* Transiciones y efectos avanzados para las tarjetas de servicio */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 1px solid rgba(56, 189, 248, 0.15); /* Borde sutil inicial */
+}
+
+.service-card:hover {
+    transform: translateY(-6px); /* Eleva la tarjeta suavemente */
+    box-shadow: 0 12px 30px -10px rgba(56, 189, 248, 0.3); /* Sombra con destello azul */
+    border-color: #38bdf8; /* Ilumina el borde al pasar el cursor */
+}
+
+/* Efecto dinámico para el botón de WhatsApp / Llamado a la Acción */
+.cta-button {
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    transform: scale(1.03); /* Crece ligeramente al pasar el cursor */
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.5); /* Efecto de brillo alrededor del botón */
+}
     </style>
 </head>
 <body>
